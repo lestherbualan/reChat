@@ -1,6 +1,6 @@
 <div class="flex flex-row h-full pt-10 overflow-hidden">
     <div class="flex-none w-96 px-5 overflow-y-auto">
-        <div class="search inline-flex bg-[#16171b] rounded-2xl w-full px-5 py-3 sticky">
+        <div class="search inline-flex bg-[#16171b] rounded-2xl w-full px-5 py-3">
             <i class="fa-light fa-magnifying-glass place-self-center text-2xl"></i>
             <span class="m-2"></span>
             <input type="text" class="w-full bg-transparent outline-none place-self-center" placeholder="Search">
@@ -32,7 +32,7 @@
         <!-- FROM COMPANIES -->
         <div class="message-container mt-7">
             <div class="label inline-flex w-full px-4 hover:cursor-pointer">
-                <p>From Teams</p>
+                <p>From Companies</p>
                 <span class="m-auto"></span>
                 <i class="fa-light fa-chevron-down"></i>
             </div>
@@ -43,7 +43,7 @@
         <!-- ALL MESSAGE -->
         <div class="message-container mt-7">
             <div class="label inline-flex w-full px-4 hover:cursor-pointer">
-                <p>Unread</p>
+                <p>All Message</p>
                 <span class="m-auto"></span>
                 <i class="fa-light fa-chevron-up"></i>
             </div>
@@ -54,7 +54,10 @@
             </div>
         </div>
     </div>
-    <div class="flex-1">
-        asd
+    <div class="flex-1 px-5">
+        <app-message-board></app-message-board>
+    </div>
+    <div class="flex-shrink-0 w-[350px] bg-slate-900">
+        ss
     </div>
 </div>

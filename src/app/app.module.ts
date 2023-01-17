@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MainComponent } from './components/main/main.component';
 import { MessageListTileComponent } from './components/message-list-tile/message-list-tile.component';
+import { MessageBoardComponent } from './components/message-board/message-board.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MessageListTileComponent } from './components/message-list-tile/message
     NavbarComponent,
     SidebarComponent,
     MainComponent,
-    MessageListTileComponent
+    MessageListTileComponent,
+    MessageBoardComponent
   ],
   imports: [
     BrowserModule,
