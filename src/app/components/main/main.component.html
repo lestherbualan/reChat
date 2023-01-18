@@ -57,7 +57,100 @@
     <div class="flex-1 px-5">
         <app-message-board></app-message-board>
     </div>
-    <div class="flex-shrink-0 w-[350px] bg-slate-900">
-        ss
+    <div class="flex-none w-[280px] pr-3">
+        <div class="flex flex-col h-full">
+            <div class="flex-none">
+                <div class="h-[300px] bg-[#5852d6] rounded-3xl p-5">
+                    <div class="w-full inline-flex">
+                        <i class="fa-thin fa-user-secret place-self-center text-3xl"></i>
+                        <span class="m-2"></span>
+                        <div class="card-user-info">
+                            <div class="inline-flex">
+                                <p class="place-self-center text-white">Gil Laurence Aranco</p>
+                                <i class="fa-solid fa-circle mx-2 place-self-center text-[10px] text-[#a2d931]"></i>
+                            </div>
+                            <p class="text-sm mt-[-2px]">+63 912 345 6789</p>
+                        </div>
+                    </div>
+                    <div class="inline-flex w-full mt-4">
+                        <button class="bg-[#6963db] text-lg px-4 py-2 text-white rounded-xl hover:cursor-pointer hover:bg-[#655fda]">
+                            <i class="fa-regular fa-phone-volume"></i>
+                        </button>
+                        <span class="m-auto"></span>
+                        <button class="bg-[#6963db] text-lg px-4 py-2 text-white rounded-xl hover:cursor-pointer hover:bg-[#655fda]">
+                            <i class="fa-regular fa-video"></i>
+                        </button>
+                        <span class="m-auto"></span>
+                        <button class="bg-[#6963db] text-lg px-4 py-2 text-white rounded-xl hover:cursor-pointer hover:bg-[#655fda]">
+                            <i class="fa-regular fa-volume-slash"></i>
+                        </button>
+                        <span class="m-auto"></span>
+                        <button class="bg-[#6963db] text-lg px-4 py-2 text-white rounded-xl hover:cursor-pointer hover:bg-[#655fda]">
+                            <i class="fa-regular fa-user-plus"></i>
+                        </button>                       
+                    </div>
+                    <div class="greetings text-white mt-4">
+                        <p class="text-sm roboto-light tracking-wide">Hi Everybody!</p>
+                        <p class="text-sm roboto-light tracking-wide">Our Company is looking for: </p>
+                    </div>
+                    <div class="badges my-2 flex flex-wrap overflow-hidden">
+                        <app-badge></app-badge>
+                        <app-badge></app-badge>
+                        <app-badge></app-badge>
+                        <app-badge></app-badge>
+                        <app-badge></app-badge>
+                        <app-badge></app-badge>
+                    </div>
+                </div>
+            </div>  
+            <div class="flex-1">
+                <div class="flex flex-col">
+                    <!-- ATTACHMENT -->
+                    <div class="message-container mt-7">
+                        <div class="label inline-flex w-full hover:cursor-pointer">
+                            <p>Attachments</p>
+                            <span class="m-auto"></span>
+                            <i class="fa-light fa-chevron-down"></i>
+                        </div>
+                        <div class="message-list">
+                            <!-- message list tile here -->
+                        </div>
+                    </div>
+                    <!-- LINKS -->
+                    <div class="message-container mt-7">
+                        <div class="label inline-flex w-full hover:cursor-pointer">
+                            <p>Links</p>
+                            <span class="m-auto"></span>
+                            <i class="fa-light fa-chevron-down"></i>
+                        </div>
+                        <div class="message-list">
+                            <!-- message list tile here -->
+                        </div>
+                    </div>
+                    <!-- ALL VACANCIES -->
+                    <div class="message-container mt-7">
+                        <div class="label inline-flex w-full hover:cursor-pointer">
+                            <p>All Vacancies</p>
+                            <span class="m-auto"></span>
+                            <i class="fa-light fa-chevron-down"></i>
+                        </div>
+                        <div class="message-list">
+                            <!-- message list tile here -->
+                        </div>
+                    </div>
+                    <!-- APPOINTMENTS -->
+                    <div class="message-container mt-7">
+                        <div class="label inline-flex w-full hover:cursor-pointer">
+                            <p>Appointments</p>
+                            <span class="m-auto"></span>
+                            <i class="fa-light fa-chevron-up"></i>
+                        </div>
+                        <div class="message-list">
+                            <!-- Appointments here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
