@@ -9,6 +9,7 @@ import { MainComponent } from './components/main/main.component';
 import { MessageListTileComponent } from './components/message-list-tile/message-list-tile.component';
 import { MessageBoardComponent } from './components/message-board/message-board.component';
 import { BadgeComponent } from './components/badge/badge.component';
+import { AuthenticationComponent } from './authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BadgeComponent } from './components/badge/badge.component';
     MainComponent,
     MessageListTileComponent,
     MessageBoardComponent,
-    BadgeComponent
+    BadgeComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,
