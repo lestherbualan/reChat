@@ -3,8 +3,14 @@
         <img src="../../assets/svg/Marketing.svg" alt="" class=" w-full h-[500px] mt-32 mb-16">
         <p class="text-center text-xl roboto-light">Build your profile and connect to companies around the world.</p>
     </div>
-    <div class="flex-1 bg-[rgb(32,35,43)]  rounded-tl-3xl rounded-bl-3xl">
-        <app-signin></app-signin>
-        <!-- <app-signup></app-signup> -->
+    <div class="flex-1 bg-[rgb(32,35,43)]  rounded-tl-xl rounded-bl-xl">
+        <!-- <app-signin></app-signin> -->
+        <div *ngIf="!signup; else elseBlock" class="flex flex-row h-full place-content-center">
+            <app-signin [signup] = "signup" (signin) ="GetValue($event)"></app-signin>
+        </div>
+        <ng-template #elseBlock>
+            <app-signup></app-signup>
+        </ng-template>
+
     </div>
 </div>

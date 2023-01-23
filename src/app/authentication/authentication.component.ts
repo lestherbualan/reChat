@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthenticationComponent implements OnInit {
 
+  signup: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  GetValue(data: boolean){
+    this.signup = data;
   }
 
 }

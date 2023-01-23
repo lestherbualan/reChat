@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="mt-5">
-            <button class="bg-[#f3fc8a] px-4 py-3 w-full rounded-2xl text-black">Login</button>
+            <button class="bg-[#f3fc8a] px-4 py-3 w-full rounded-2xl text-black" routerLink="/home">Login</button>
         </div>
         <div class="mt-2">
             <button class="bg-white px-4 py-3 w-full rounded-2xl text-black">
@@ -43,7 +43,7 @@
         <span class="m-4"></span>
         <div class="inline-flex place-content-center">
             <p class="text-[#8e929a] mr-2">Don't have an Account?</p>
-            <a href="#" class="text-[#3f7af1]">Sign Up</a>
+            <a href="#" class="text-[#3f7af1]" (click)="onSignUp()">Sign Up</a>
         </div>
     </div>
 </div>

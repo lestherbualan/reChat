@@ -12,6 +12,7 @@ import { BadgeComponent } from './components/badge/badge.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { SigninComponent } from './authentication/signin/signin.component';
 import { SignupComponent } from './authentication/signup/signup.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SignupComponent } from './authentication/signup/signup.component';
     AuthenticationComponent,
     SigninComponent,
     SignupComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
