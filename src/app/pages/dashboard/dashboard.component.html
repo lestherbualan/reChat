@@ -4,6 +4,7 @@
     </div>
     <div class="flex-1">
         <div class="flex flex-col h-screen">
+            <!-- navigation -->
             <div class="inline-flex h-16 bg-[#1e1f23] border-b border-gray-700 px-5">
                 <div class="inline-flex place-self-center hover:cursor-pointer">
                     <i class="fa-solid fa-house text-white text-lg place-self-center"></i>    
@@ -32,8 +33,9 @@
                     <i class="fa-thin fa-user-secret place-self-center text-2xl"></i>
                 </div>
             </div>
-            <div class="flex flex-row h-screen p-5">
+            <div class="flex flex-row h-screen overflow-y-scroll p-5">
                 <div class="flex-1 px-5">
+                    <!-- post header -->
                     <div class="border border-gray-700 bg-[#1e1f23] rounded w-[1000px] p-5">
                         <div class="inline-flex w-full">
                             <i class="fa-thin fa-user-secret place-self-center text-3xl"></i>
@@ -69,6 +71,9 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="flex flex-col mt-5 w-[1000px]">
+                        <app-post-card></app-post-card>
                     </div>
                 </div>
                 <div class="flex-none w-[350px]">

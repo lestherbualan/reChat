@@ -13,6 +13,8 @@ import { AuthenticationComponent } from './authentication/authentication.compone
 import { SigninComponent } from './authentication/signin/signin.component';
 import { SignupComponent } from './authentication/signup/signup.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { MessageComponent } from './pages/message/message.component';
+import { PostCardComponent } from './components/post-card/post-card.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     SigninComponent,
     SignupComponent,
     DashboardComponent,
+    MessageComponent,
+    PostCardComponent,
   ],
   imports: [
     BrowserModule,
