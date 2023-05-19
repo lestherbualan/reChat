@@ -1,6 +1,6 @@
 <div class="bg-[#17181c] min-h-screen flex flex-row w-full text-white">
     <div class="flex-none w-[300px] border-r border-gray-700">
-        sadsa
+        sidebar
     </div>
     <div class="flex-1">
         <div class="flex flex-col h-screen">
@@ -17,9 +17,16 @@
                     <div class="roboto-light rounded place-self-center py-1 px-2 hover:cursor-pointer hover:bg-[#343440]">Community Feed</div>
                     <div class="roboto-light rounded place-self-center py-1 px-2 hover:cursor-pointer hover:bg-[#343440]">Mutual Friend</div>
                 </div>
+                <span class="mx-auto"></span>
+                <div class="inline-flex place-self-center">
+                    <div class="bg-[#27282f] hover:bg-[#33343d] px-2 rounded-md w-[400px] inline-flex border border-gray-700">
+                        <input type="text" placeholder="Go Search it!" class="outline-none bg-transparent px-3 py-2 w-full">
+                        <i class="fa-thin fa-magnifying-glass place-self-center text-[#8e929a] px-3"></i>
+                    </div>                     
+                </div>
                 <span class="m-auto"></span>
                 <div class="inline-flex place-self-center">
-                    <div class="rounded-full border border-gray-700 w-10 h-10 inline-flex place-content-center bg-[#27282f] mx-1 hover:cursor-pointer hover:bg-[#343440]">
+                    <div (click)="viewMessagesPage()" class="rounded-full border border-gray-700 w-10 h-10 inline-flex place-content-center bg-[#27282f] mx-1 hover:cursor-pointer hover:bg-[#343440]">
                         <i class="fa-solid fa-comment-lines text-white text-lg place-self-center"></i>
                     </div>
                     <div class="rounded-full border border-gray-700 w-10 h-10 inline-flex place-content-center bg-[#27282f] mx-1 hover:cursor-pointer hover:bg-[#343440]">
@@ -33,10 +40,10 @@
                     <i class="fa-thin fa-user-secret place-self-center text-2xl"></i>
                 </div>
             </div>
-            <div class="flex flex-row h-screen overflow-y-scroll p-5">
+            <div class="flex flex-row h-screenoverflow-y-scroll p-5">
                 <div class="flex-1 px-5">
                     <!-- post header -->
-                    <div class="border border-gray-700 bg-[#1e1f23] rounded w-[1000px] p-5">
+                    <div id="postheader" class="mx-auto border border-gray-700  bg-[#1e1f23] rounded  max-w-[800px] p-5">
                         <div class="inline-flex w-full">
                             <i class="fa-thin fa-user-secret place-self-center text-3xl"></i>
                             <span class="m-2"></span>
@@ -62,7 +69,7 @@
                                     <i class="fa-thin fa-face-smile-relaxed px-1"></i>
                                 </li>
                                 <span class="m-auto"></span>
-                                <li class="py-1 px-2 mx-1 inline-flex rounded hover:cursor-pointer hover:bg-[#343440]">
+                                <li class="py-1 px-3 mx-1 inline-flex rounded hover:cursor-pointer hover:bg-[#343440]">
                                     <i class="fa-thin fa-pen-line mr-1 place-self-center"></i>
                                     <p class="text-sm place-self-center">Draft</p>
                                 </li>
@@ -72,7 +79,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="flex flex-col mt-5 w-[1000px]">
+                    <div class="flex flex-col mt-5 max-w-[800px] mx-auto">
                         <app-post-card></app-post-card>
                     </div>
                 </div>
